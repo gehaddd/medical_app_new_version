@@ -11,7 +11,7 @@ var headers = {
 };
 
 api(data) async {
-  var url = Uri.https('medicales.vercel.app', '/api');
+  var url = Uri.https('general-medical-expert-system.vercel.app', '/api');
   var response = await http.post(url, headers: headers, body: data);
   var jsonResponse = convert.jsonDecode(response.body) as Map<String, dynamic>;
 
